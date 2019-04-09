@@ -1,0 +1,114 @@
+<!DOCTYPE html lang="en">
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <!-- default online location of the IMS respec js lib: -->
+    <script src='https://purl.imsglobal.org/spec/respec-ims-default.js' async class='remove'></script>
+    <!-- local alternative: -->
+    <!-- <script src='../js/respec-ims-default.js' async class='remove'></script> -->
+    <!--
+    <script src='./shared/local-biblio.js' class='remove'></script>
+    <script src='./shared/contributors.js' class='remove'></script>
+    -->
+    <script class='remove'>
+      var respecConfig = {
+        // title of the specification, without version:
+        specTitle: "Caliper",
+
+        //shortName, provided by IMS staff, list at https://goo.gl/C92RtM
+        shortName: "caliper",
+
+        //specStatus: IMS Base Document, IMS Candidate Final (Public) or IMS Final Release
+        specStatus: "IMS Base Document",
+
+        //date of publication
+        specDate: "February 29th, 2018",
+
+        //spec version
+        specVersion: "1.2",
+
+        //spec nature is "normative" or "informative"
+        specNature: "normative",
+
+        //spec type is "main", "cert", "impl", "errata" or other agreed upon string
+        specType: "spec",
+
+        //contributors is a js object in this case shared between multiple documents
+        contributors: [
+          {name: "First Last", company: "IMS Global", companyURL: "www.imsglobal.org", role: "Editor"},
+          {name: "First Last", company: "IMS Global", companyURL: "www.imsglobal.org"}
+
+        ],
+
+        //localBiblio is used to store bib entries not yet in the online imsBiblio or on specref.org
+        localBiblio:  {
+          "EXAMPLE-IMPL": {
+              title: "Example Implementation Guide 1.1",
+              href: "https://www.imsglobal.org/example/v1p1/impl/",
+              publisher: "IMS Global Learning Consortium",
+              "authors": [
+                "First, Last",
+                "First, Last"
+              ]
+          },
+          "EXAMPLE-CERT": {
+              title: "Example Conformance Certification Guide 1.1",
+              href: "https://www.imsglobal.org/example/v1p1/cert/",
+              publisher: "IMS Global Learning Consortium",
+              "authors": [
+                "First, Last",
+                "First, Last"
+              ]
+          },
+          "EXAMPLE-JSONSCH": {
+              title: "Example JSON Schema",
+              href: "https://purl.imsglobal.org/example/v1p1/schema.json",
+              publisher: "IMS Global Learning Consortium",
+              "authors": [
+                "First, Last",
+                "First, Last"
+              ]
+          },
+          "EXAMPLE-ERRATA": {
+              title: "Example 1.1 Errata",
+              href: "https://www.imsglobal.org/example/v1p1/errata/",
+              publisher: "IMS Global Learning Consortium",
+              "authors": [
+                "First, Last",
+                "First, Last"
+              ]
+          }
+        }
+        //override the default online location of fixup.js:
+        //overrideFixupLocation : "../js/fixup.js",
+
+        //override the default online location of ims-base.css:
+        //overrideCSSLocation : "../css/ims-base.css";
+
+        //override the default online location of ims-biblio.js:
+        //overrideIMSbiblioLocation : "...";
+
+        //disable fetching of ims-biblio.js by setting to true:
+        //disableFetchIMSbiblio: true
+
+        //remove body scripts and/or inline CSS
+        //cleanBodyScripts: true,
+        //cleanBodyCSS: true,
+
+      };
+    </script>
+  </head>
+  <body>
+    <!-- a header is inserted here by the script -->
+    <!-- a toc is inserted here by the script -->
+
+    <!-- The abstract is required and provides a few introductory paragraphs of
+    information on the purpose of the spec.-->
+    <script class="transclude" src="shared/abstract.js" data-id="t1"></script>
+
+    <script class="transclude remove" src="../caliper-spec.md" data-id="t2"></script>
+
+
+    <!-- a footer is inserted by the script -->
+  </body>
+</html>
