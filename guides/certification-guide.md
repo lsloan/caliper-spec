@@ -38,7 +38,7 @@ The following prerequisites MUST be met before your organization can begin the p
 ### <a name="confTestProc"></a> Conformance Testing Process
 Visit the Caliper Certification service at [https://www.imsglobal.org/sso/launch.php/caliper](https://www.imsglobal.org/sso/launch.php/caliper).  You MUST be logged in to the IMS Global website to access the Caliper certification service.  If you do not have an account, please register at [https://www.imsglobal.org/user/register](https://www.imsglobal.org/user/register).
 
-The certification service provides a playground for testing your Caliper messages.  Click the "Start Testing" link under __Test Your Product__ to access the playground.
+The certification service provides a playground for testing your Caliper messages.  Click the "Caliper Playground" link under __Test Your Product__ to access the playground.
 
 Once you are ready to commence certification testing, click the "Certify Your Product" link under __Certify Your Product__ to commence testing.  The following steps will guide you through the process.  A [screencast](https://youtu.be/iLCsB2CI7aw) of the certification workflow is available for review.
 
@@ -49,13 +49,14 @@ Once you are ready to commence certification testing, click the "Certify Your Pr
    * Product URL
    * Product description
    * Caliper specification version
+   * Member organization
    * Representative name
    * Representative email address
-   * Member organization
+   * Information for who should be contacted about certification expiration
 
 2. Click the green "Start Certification" button.  To terminate testing click the white "Cancel" button.
 
-3. An "Instructions" page provides both a test endpoint URL and a bearer token.  Configure your software to send Caliper messages to the test endpoint URL.  For each request, set the HTTP <code>Authorization</code> header field value to the provided bearer token and the HTTP <code>Host</code> header field value to the provided endpoint URL.
+3. An "Instructions" page provides both a test endpoint URL and a bearer token.  Configure your software to send Caliper messages to the test endpoint URL.  For each request, set the HTTP <code>Authorization</code> header field value to the provided bearer token, for example: <code>Authorization: Bearer 16b33d7e-32ae-4c12-ba10-1a1f08a0d5d7</code> and the HTTP <code>Host</code> header field value to the provided endpoint URL.
 
 4. Initiate the product test, sending messages to the certification service endpoint.
 
@@ -68,7 +69,7 @@ Once you are ready to commence certification testing, click the "Certify Your Pr
 8. Repeat the test as necessary in order to certify against additional metric profiles or address previous failed tests.
 
 #### <a name="certMark"></a>Certification Mark
-After submitting your successful conformance information and receiving confirmation and a registration number from IMS Global you may then apply the appropriate conformance mark. The IMS Global conformance chart will list your conformance details. If you have any questions, please feel free to contact us at any point.  Products without an IMS conformance registration number are not considered compliant by IMS Global.
+After submitting your successful conformance information and receiving confirmation and a registration number from IMS Global via email you may then apply the appropriate conformance mark. The IMS Global conformance chart will list your conformance details. If you have any questions, please feel free to contact us at any point.  Products without an IMS conformance registration number are not considered compliant by IMS Global.
 
 #### <a name="certRenewal"></a>Certification Expiration and Renewal
 Caliper certification covers individual metric profiles only and is scoped to the specific version of the Caliper specification tested.  Major or minor releases of the Caliper specification and/or associated metric profiles will require recertification of your upgraded platform, application or service. All IMS Certifications require that you renew and retest your certification after one year.
@@ -83,7 +84,7 @@ Each Caliper profile is also a unit of certification for Caliper [Sensor](https:
 * Certain [Event](https://www.imsglobal.org/spec/caliper/v1p2#event) properties are required and MUST be specified.  Required properties include: <code>id</code>, <code>type</code>, <code>actor</code>, <code>action</code>, <code>object</code> and <code>eventTime</code>.
 * All other [Event](https://www.imsglobal.org/spec/caliper/v1p2#event) properties are considered optional and need not be referenced.  Adherence to the rules associated with each required and/or optional property specified is mandatory.
 * Each [Entity](https://www.imsglobal.org/spec/caliper/v1p2#entity) participating in the [Event](https://www.imsglobal.org/spec/caliper/v1p2#event) MUST be expressed either as an object or as a string corresponding to the resource's [IRI](https://www.imsglobal.org/spec/caliper/v1p2#iriDef).
-* The actions vocabulary is limited to the supported actions described in the *Caliper Analytics&reg; Specification*, version 1.2, [Appendix A](https://www.imsglobal.org/spec/caliper/v1p2#actions), and no other.
+* The actions vocabulary is limited to the supported actions described in the *Caliper Analytics&reg; Specification*, version 1.2, [Actions Appendix](https://www.imsglobal.org/spec/caliper/v1p2#actions), and no other.
 * Serialized Events and Entities MUST conform to the syntactical requirements defined in the Caliper specification, and be contained within a Caliper [Envelope](https://www.imsglobal.org/spec/caliper/v1p2#envelope) using proper [JSON-LD context and serialization](https://www.imsglobal.org/spec/caliper/v1p2#serialization)
 
 ### <a name="generalProfile"></a>General Profile
