@@ -910,11 +910,11 @@ assertions and messages could be converted from their XML values into a simple f
        "response_id": "07940580-b309-415e-a37c-914d387c1150",
        "IssueInstant": "2020-01-15T10:15:00Z",
        "Destination": "http://sp.example.com/demo1/index.php?acs",
-       "InResponseTo": "_4fee3b04709234efa4234755273d56685",
+       "InResponseTo": "\_4fee3b04709234efa4234755273d56685",
        "Issuer": "http://idp.example.com/metadata.php",
        "signed": "true",
        "Status": "urn:oasis:names:tc:SAML:2.0:status:Success",
-       "Subject_NameID": "_ce3d2948b4cf20146dee0a0b3dd6f69b6cf86f62d7",
+       "Subject_NameID": "\_ce3d2948b4cf20146dee0a0b3dd6f69b6cf86f62d7",
        "Audience": "http://sp.example.com/demo1/metadata.php",
        "AuthnContextClassRef": "urn:oasis:names:tc:SAML:2.0:ac:classes:Password",
        "mail": "test@example.com",
@@ -1004,7 +1004,7 @@ For a learner's interactions within a [QTI](https://www.imsglobal.org/question/i
 
 | Release Date  | Comments                |
 |---------------|-------------------------|
-| x March, 2020 | Candidate Final Release |
-
+| 13 March, 2020 | Base Document Release |
+| 27 March, 2020 | Candidate Final Release |
 </section>
 `;

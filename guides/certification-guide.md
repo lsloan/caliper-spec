@@ -525,7 +525,8 @@ This document contains trademarks of the IMS Global Learning Consortium includin
 
 | Release Date  | Comments                |
 |---------------|-------------------------|
-| x March, 2020 | Candidate Final Release |
+| 13 March, 2020 | Base Document Release |
+| 27 March, 2020 | Candidate Final Release |
 
 </section>
 
